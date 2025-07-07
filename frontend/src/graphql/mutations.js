@@ -20,6 +20,7 @@ export const UPDATE_USER = gql`
       names
       username
       email
+      topLanguages
     }
   }
 `;

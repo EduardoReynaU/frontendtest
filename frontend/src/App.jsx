@@ -50,6 +50,16 @@ const App = () => {
           path="/convocatorias"
           element={token ? <Convocatorias /> : <Navigate to="/login" />}
         />
+        <Route
+        path="/convocatoria"
+        element={token ? <FormularioConvocatoria /> : <Navigate to="/login" />}
+      />
+
+      {/* Nueva ruta: Chat */}
+      <Route
+        path="/chatter"
+        element={token ? <Chatter /> : <Navigate to="/login" />}
+      />
 
         {/* Convocado (protegido) */}
         <Route
