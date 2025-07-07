@@ -5,6 +5,7 @@ import Logout from './components/Logout';
 import Proyectos from './components/Proyecto';
 import Convocatorias from './components/Convocatorias';
 import Convocado from './components/Convocado';
+import DetalleProyecto from './components/detalleProyecto';
 import Cookies from 'js-cookie';
 import React from 'react';
 
@@ -42,6 +43,7 @@ const App = () => {
           path="/proyectos"
           element={token ? <Proyectos /> : <Navigate to="/login" />}
         />
+        <Route path="/proyecto/:id" element={<DetalleProyecto />} />
 
         {/* Convocatorias (protegido) */}
         <Route

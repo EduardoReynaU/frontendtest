@@ -22,6 +22,7 @@ export const GET_PROYECTOS = gql`
       organizador
       duracion
       fecha
+      usuarioId
     }
   }
 `;
